@@ -49,9 +49,8 @@ fetch("graph_data.json") // Load graph data
       },
       edges: {
         arrows: "to",
-        width: 2, // Slightly thicker edges
+        width: 3, // Slightly thicker edges for better visibility
         smooth: { type: "continuous" },
-        font: { align: "middle", size: 12 },
         physics: true, // Enable edge physics
         length: function(edgeData) {
           // Use the length property from our data, or default to 200
@@ -64,6 +63,32 @@ fetch("graph_data.json") // Load graph data
       }
     };
     const network = new vis.Network(container, networkData, options); // Render graph
+    
+    // Add hover tooltips for edges
+    network.on("hoverEdge", function (params) {
+      const edgeId = params.edge;
+      const edge = edges.get(edgeId);
+      if (edge) {
+        const sourceNode = nodes.get(edge.from);
+        const targetNode = nodes.get(edge.to);
+        const tooltip = `${sourceNode.label} → ${targetNode.label}\n${edge.label}`;
+        
+        // Update the network with a temporary title for the edge
+        edges.update({
+          id: edgeId,
+          title: tooltip
+        });
+      }
+    });
+    
+    network.on("blurEdge", function (params) {
+      const edgeId = params.edge;
+      // Remove the tooltip
+      edges.update({
+        id: edgeId,
+        title: undefined
+      });
+    });
   })
 
   .catch(error => {

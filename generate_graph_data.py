@@ -5,12 +5,7 @@ import csv
 people = []
 with open("people.csv", "r", encoding='utf-8') as f:
     reader = csv.DictReader(f)
-    for row in reader:
-        # Debug: show what columns we actually have
-        if len(people) == 0:
-            print("Available columns:", list(row.keys()))
-            print("First row data:", dict(row))
-        
+    for row in reader:   
         # Create a person object with your exact CSV structure
         person = {
             "id": int(row["id"]),
@@ -41,15 +36,25 @@ with open("relationships.csv", "r", encoding='utf-8') as f:
         # Calculate edge length based on strength (stronger = shorter)
         # Strength 10 = length 50, Strength 1 = length 500
         strength = int(row["strength"])
-        edge_length = 50 + (10 - strength) * 50  # Inverse relationship
+        edge_length = 150 + (10 - strength) * 50  # Inverse relationship
+        
+        # Color mapping for relationship types
+        relationship_colors = {
+            "Co-founded company together": "#FF6B6B",  # Red - Partnership
+            "Worked together with": "#4ECDC4",        # Teal - Collaboration
+            "Invested in": "#45B7D1",                 # Blue - Investment
+            "Direct competitors": "#FFA726",          # Orange - Competition
+            "Publicly criticized": "#9C27B0",        # Purple - Criticism
+            "Board member of": "#66BB6A"              # Green - Governance
+        }
         
         relationships.append({
             "from": int(row["source"]),      # vis.js needs "from"
             "to": int(row["target"]),        # vis.js needs "to"  
-            "label": row["relationship"],    # vis.js needs "label"
+            "label": row["relationship"],    # Keep for tooltip/hover
             "length": edge_length,           # Edge length for physics
             "strength": strength,            # Keep original strength for reference
-            "color": {"color": f"hsl({strength * 30}, 70%, 50%)"}  # Color by strength
+            "color": {"color": relationship_colors.get(row["relationship"], "#666666")}  # Color by relationship type
         })
 
 # Step 3: Combine into graph structure

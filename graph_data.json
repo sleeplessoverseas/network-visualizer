@@ -282,300 +282,300 @@
       "from": 1,
       "to": 4,
       "label": "Invested in",
-      "length": 150,
+      "length": 250,
       "strength": 8,
       "color": {
-        "color": "hsl(240, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 1,
       "to": 10,
       "label": "Co-founded company together",
-      "length": 50,
+      "length": 150,
       "strength": 10,
       "color": {
-        "color": "hsl(300, 70%, 50%)"
+        "color": "#FF6B6B"
       }
     },
     {
       "from": 1,
       "to": 12,
       "label": "Worked together with",
-      "length": 200,
+      "length": 300,
       "strength": 7,
       "color": {
-        "color": "hsl(210, 70%, 50%)"
+        "color": "#4ECDC4"
       }
     },
     {
       "from": 2,
       "to": 3,
       "label": "Direct competitors",
-      "length": 250,
+      "length": 350,
       "strength": 6,
       "color": {
-        "color": "hsl(180, 70%, 50%)"
+        "color": "#FFA726"
       }
     },
     {
       "from": 2,
       "to": 22,
       "label": "Direct competitors",
-      "length": 300,
+      "length": 400,
       "strength": 5,
       "color": {
-        "color": "hsl(150, 70%, 50%)"
+        "color": "#FFA726"
       }
     },
     {
       "from": 3,
       "to": 20,
       "label": "Invested in",
-      "length": 200,
+      "length": 300,
       "strength": 7,
       "color": {
-        "color": "hsl(210, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 3,
       "to": 4,
       "label": "Invested in",
-      "length": 150,
+      "length": 250,
       "strength": 8,
       "color": {
-        "color": "hsl(240, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 4,
       "to": 10,
       "label": "Worked together with",
-      "length": 250,
+      "length": 350,
       "strength": 6,
       "color": {
-        "color": "hsl(180, 70%, 50%)"
+        "color": "#4ECDC4"
       }
     },
     {
       "from": 5,
       "to": 1,
       "label": "Worked together with",
-      "length": 100,
+      "length": 200,
       "strength": 9,
       "color": {
-        "color": "hsl(270, 70%, 50%)"
+        "color": "#4ECDC4"
       }
     },
     {
       "from": 5,
       "to": 7,
       "label": "Invested in",
-      "length": 200,
+      "length": 300,
       "strength": 7,
       "color": {
-        "color": "hsl(210, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 6,
       "to": 22,
       "label": "Board member of",
-      "length": 150,
+      "length": 250,
       "strength": 8,
       "color": {
-        "color": "hsl(240, 70%, 50%)"
+        "color": "#66BB6A"
       }
     },
     {
       "from": 7,
       "to": 11,
       "label": "Worked together with",
-      "length": 100,
+      "length": 200,
       "strength": 9,
       "color": {
-        "color": "hsl(270, 70%, 50%)"
+        "color": "#4ECDC4"
       }
     },
     {
       "from": 8,
       "to": 11,
       "label": "Invested in",
-      "length": 200,
+      "length": 300,
       "strength": 7,
       "color": {
-        "color": "hsl(210, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 9,
       "to": 1,
       "label": "Invested in",
-      "length": 150,
+      "length": 250,
       "strength": 8,
       "color": {
-        "color": "hsl(240, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 9,
       "to": 4,
       "label": "Invested in",
-      "length": 200,
+      "length": 300,
       "strength": 7,
       "color": {
-        "color": "hsl(210, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 10,
       "to": 7,
       "label": "Worked together with",
-      "length": 150,
+      "length": 250,
       "strength": 8,
       "color": {
-        "color": "hsl(240, 70%, 50%)"
+        "color": "#4ECDC4"
       }
     },
     {
       "from": 11,
       "to": 3,
       "label": "Co-founded company together",
-      "length": 50,
+      "length": 150,
       "strength": 10,
       "color": {
-        "color": "hsl(300, 70%, 50%)"
+        "color": "#FF6B6B"
       }
     },
     {
       "from": 12,
       "to": 11,
       "label": "Invested in",
-      "length": 250,
+      "length": 350,
       "strength": 6,
       "color": {
-        "color": "hsl(180, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 13,
       "to": 22,
       "label": "Direct competitors",
-      "length": 200,
+      "length": 300,
       "strength": 7,
       "color": {
-        "color": "hsl(210, 70%, 50%)"
+        "color": "#FFA726"
       }
     },
     {
       "from": 14,
       "to": 22,
       "label": "Direct competitors",
-      "length": 250,
+      "length": 350,
       "strength": 6,
       "color": {
-        "color": "hsl(180, 70%, 50%)"
+        "color": "#FFA726"
       }
     },
     {
       "from": 15,
       "to": 3,
       "label": "Invested in",
-      "length": 150,
+      "length": 250,
       "strength": 8,
       "color": {
-        "color": "hsl(240, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 15,
       "to": 16,
       "label": "Co-founded company together",
-      "length": 50,
+      "length": 150,
       "strength": 10,
       "color": {
-        "color": "hsl(300, 70%, 50%)"
+        "color": "#FF6B6B"
       }
     },
     {
       "from": 16,
       "to": 3,
       "label": "Invested in",
-      "length": 200,
+      "length": 300,
       "strength": 7,
       "color": {
-        "color": "hsl(210, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 17,
       "to": 8,
       "label": "Invested in",
-      "length": 200,
+      "length": 300,
       "strength": 7,
       "color": {
-        "color": "hsl(210, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 18,
       "to": 13,
       "label": "Direct competitors",
-      "length": 250,
+      "length": 350,
       "strength": 6,
       "color": {
-        "color": "hsl(180, 70%, 50%)"
+        "color": "#FFA726"
       }
     },
     {
       "from": 19,
       "to": 3,
       "label": "Publicly criticized",
-      "length": 400,
+      "length": 500,
       "strength": 3,
       "color": {
-        "color": "hsl(90, 70%, 50%)"
+        "color": "#9C27B0"
       }
     },
     {
       "from": 20,
       "to": 3,
       "label": "Direct competitors",
-      "length": 300,
+      "length": 400,
       "strength": 5,
       "color": {
-        "color": "hsl(150, 70%, 50%)"
+        "color": "#FFA726"
       }
     },
     {
       "from": 21,
       "to": 3,
       "label": "Invested in",
-      "length": 200,
+      "length": 300,
       "strength": 7,
       "color": {
-        "color": "hsl(210, 70%, 50%)"
+        "color": "#45B7D1"
       }
     },
     {
       "from": 22,
       "to": 2,
       "label": "Direct competitors",
-      "length": 250,
+      "length": 350,
       "strength": 6,
       "color": {
-        "color": "hsl(180, 70%, 50%)"
+        "color": "#FFA726"
       }
     },
     {
       "from": 23,
       "to": 2,
       "label": "Publicly criticized",
-      "length": 350,
+      "length": 450,
       "strength": 4,
       "color": {
-        "color": "hsl(120, 70%, 50%)"
+        "color": "#9C27B0"
       }
     }
   ]
