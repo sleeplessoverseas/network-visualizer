@@ -41,7 +41,7 @@ with open("relationships.csv", "r", encoding='utf-8') as f:
         # Color mapping for relationship types
         relationship_colors = {
             "Co-founded company together": "#FF6B6B",  # Red - Partnership
-            "Worked together with": "#4ECDC4",        # Teal - Collaboration
+            "Worked together with": "#2C2C2C",        # Dark Gray/Black - Collaboration
             "Invested in": "#45B7D1",                 # Blue - Investment
             "Direct competitors": "#FFA726",          # Orange - Competition
             "Publicly criticized": "#9C27B0",        # Purple - Criticism

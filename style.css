@@ -42,3 +42,38 @@
   font-size: 13px;
   color: #555;
 }
+
+#toggleLabels {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#toggleLabels:hover {
+  background: #005a9e;
+}
+
+#instructions {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  color: #333;
+}

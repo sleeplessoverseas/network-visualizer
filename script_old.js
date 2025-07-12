@@ -26,8 +26,6 @@ fetch("graph_data.json") // Load graph data
       console.log(`Stored edge ${key}: ${edge.color?.color}`); // Debug
     });
     
-    console.log("Complete originalEdgeColorMap:", originalEdgeColorMap); // Debug
-    
     const options = {
       physics: {
         enabled: true,
@@ -59,8 +57,7 @@ fetch("graph_data.json") // Load graph data
           border: "#2B7CE9",
           background: "#97C2FC",
           highlight: { border: "#2B7CE9", background: "#D2E5FF" }
-        },
-        chosen: false // Disable vis.js default highlighting
+        }
       },
       edges: {
         arrows: "to",
@@ -68,7 +65,10 @@ fetch("graph_data.json") // Load graph data
         smooth: { type: "continuous" },
         physics: true, // Enable edge physics
         font: { size: 0 }, // Hide labels by default
-        chosen: false // Disable vis.js default highlighting
+        length: function(edgeData) {
+          // Use the length property from our data, or default to 200
+          return edgeData.length || 200;
+        }
       },
       layout: {
         improvedLayout: true,
@@ -111,7 +111,8 @@ fetch("graph_data.json") // Load graph data
     });
     
     function highlightNeighborhood(nodeId) {
-      // Don't reset - just apply highlighting directly
+      // Reset any previous highlighting
+      resetHighlighting();
       
       // Get all edges connected to this node
       const connectedEdges = edges.get().filter(edge => 
@@ -155,22 +156,17 @@ fetch("graph_data.json") // Load graph data
       
       // Update edges - highlight connected ones, dim others
       const allEdges = edges.get();
-      console.log("All edges from vis.js:", allEdges); // Debug
-      
       const connectedEdgeIds = new Set(connectedEdges.map(edge => edge.id));
-      console.log("Connected edge IDs:", connectedEdgeIds); // Debug
-      
       const updatedEdges = allEdges.map(edge => {
         if (connectedEdgeIds.has(edge.id)) {
           // Get original color using from-to mapping
           const key = `${edge.from}-${edge.to}`;
           const originalColor = originalEdgeColorMap.get(key) || "#000000";
           console.log(`Highlighting edge ${edge.id} (${key}) with color: ${originalColor}`); // Debug
-          console.log("Edge current color:", edge.color); // Debug
           return {
             ...edge,
             width: 5, // Thicker for highlighted edges
-            color: originalColor // Try direct color value instead of nested object
+            color: { color: originalColor } // Preserve original color
           };
         } else {
           return {
@@ -180,8 +176,6 @@ fetch("graph_data.json") // Load graph data
           };
         }
       });
-      
-      console.log("Updated edges to apply:", updatedEdges.filter(e => connectedEdgeIds.has(e.id))); // Debug
       
       // Apply updates
       nodes.update(updatedNodes);
@@ -209,7 +203,7 @@ fetch("graph_data.json") // Load graph data
         return {
           ...edge,
           width: 3,
-          color: originalColor // Try direct color value
+          color: { color: originalColor }
         };
       });
       
