@@ -15,17 +15,52 @@ fetch("graph_data.json") // Load graph data
     const edges = new vis.DataSet(data.edges); // Edges
     const networkData = { nodes, edges }; // Data for vis.js
     const options = {
-      physics: true, // Physics simulation
-      interaction: { hover: true }, // Hover effect
+      physics: {
+        enabled: true,
+        stabilization: { 
+          iterations: 200,
+          onlyDynamicEdges: false,
+          fit: true
+         }, // Stop moving after 200 iterations
+        barnesHut: {
+          gravitationalConstant: -2000,
+          centralGravity: 0.3,
+          springLength: 300, // Base spring length
+          springConstant: 0.04,
+          damping: 0.09,
+          avoidOverlap: 1
+        }
+      },
+      interaction: { 
+        hover: true,
+        dragNodes: true,
+        zoomView: true
+      },
       nodes: {
-        shape: "dot", // Circle nodes
-        scaling: { min: 10, max: 30 }, // Dot size
-        font: { size: 16, color: "#000" } // Label font
+        shape: "dot",
+        size: 10, // Fixed size instead of scaling
+        font: { size: 14, color: "#000" },
+        borderWidth: 2,
+        color: {
+          border: "#2B7CE9",
+          background: "#97C2FC",
+          highlight: { border: "#2B7CE9", background: "#D2E5FF" }
+        }
       },
       edges: {
-        arrows: "to", // Arrow at 'to' end
-        color: "#999", // Edge color
-        font: { align: "middle" } // Edge label
+        arrows: "to",
+        width: 2, // Slightly thicker edges
+        smooth: { type: "continuous" },
+        font: { align: "middle", size: 12 },
+        physics: true, // Enable edge physics
+        length: function(edgeData) {
+          // Use the length property from our data, or default to 200
+          return edgeData.length || 200;
+        }
+      },
+      layout: {
+        improvedLayout: true,
+        hierarchical: false
       }
     };
     const network = new vis.Network(container, networkData, options); // Render graph

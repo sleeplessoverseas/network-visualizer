@@ -1,0 +1,31 @@
+source,target,relationship,strength,source_link
+1,4,Invested in,8,https://techcrunch.com/2019/08/01/sam-altman-scale-ai-series-c/
+1,10,Co-founded company together,10,https://en.wikipedia.org/wiki/OpenAI
+1,12,Worked together with,7,https://en.wikipedia.org/wiki/Y_Combinator
+2,3,Direct competitors,6,https://www.cnbc.com/2020/06/29/elon-musk-facebook-ai-rant.html
+2,22,Direct competitors,5,https://www.reuters.com/business/autos-transportation/amazon-unveils-electric-delivery-van-rivian-2021-07-22/
+3,20,Invested in,7,https://techcrunch.com/2019/09/19/facebook-invests-in-stripe/
+3,4,Invested in,8,https://www.crunchbase.com/organization/scale-ai/company_financials
+4,10,Worked together with,6,https://www.anthropic.com/index/introducing-anthropic
+5,1,Worked together with,9,https://en.wikipedia.org/wiki/OpenAI
+5,7,Invested in,7,https://www.crunchbase.com/organization/deepmind/company_financials
+6,22,Board member of,8,https://www.businessinsider.com/nikesh-arora-board-member-of-palo-alto-networks
+7,11,Worked together with,9,https://www.deepmind.com/about
+8,11,Invested in,7,https://www.sequoiacap.com/people/roelof-botha/
+9,1,Invested in,8,https://angel.co/company/openai
+9,4,Invested in,7,https://angel.co/company/scale-ai
+10,7,Worked together with,8,https://en.wikipedia.org/wiki/Anthropic
+11,3,Co-founded company together,10,https://en.wikipedia.org/wiki/Google
+12,11,Invested in,6,https://en.wikipedia.org/wiki/Vinod_Khosla
+13,22,Direct competitors,7,https://www.cnbc.com/2022/01/25/amazon-vs-microsoft-cloud-battle.html
+14,22,Direct competitors,6,https://www.cnbc.com/2023/11/29/apple-vs-amazon-siri-vs-alexa.html
+15,3,Invested in,8,https://en.wikipedia.org/wiki/Peter_Thiel
+15,16,Co-founded company together,10,https://en.wikipedia.org/wiki/PayPal
+16,3,Invested in,7,https://www.crunchbase.com/organization/facebook/company_financials
+17,8,Invested in,7,https://a16z.com/people/ben-horowitz/
+18,13,Direct competitors,6,https://www.cnbc.com/2020/12/11/salesforce-vs-microsoft-slack-teams.html
+19,3,Publicly criticized,3,https://www.vox.com/2017/6/7/15755830/travis-kalanick-facebook-uber-ethics
+20,3,Direct competitors,5,https://en.wikipedia.org/wiki/Slack_(software)
+21,3,Invested in,7,https://stripe.com/newsroom/news/stripe-series-g-funding
+22,2,Direct competitors,6,https://www.cnbc.com/2021/09/09/amazon-vs-tesla-in-electric-delivery-vehicles.html
+23,2,Publicly criticized,4,https://www.businessinsider.com/elon-musk-vs-jeff-bezos-space-race-history-2021-12

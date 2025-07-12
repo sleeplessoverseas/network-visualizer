@@ -2,40 +2,581 @@
   "nodes": [
     {
       "id": 1,
-      "label": "Meta",
-      "value": 10
+      "label": "Sam Altman",
+      "value": 10,
+      "notable_company": "OpenAI",
+      "types": [
+        "AI",
+        "Policy"
+      ],
+      "gender": "Male",
+      "photo_url": null
     },
     {
       "id": 2,
-      "label": "Scale AI",
-      "value": 8
+      "label": "Elon Musk",
+      "value": 10,
+      "notable_company": "Tesla/SpaceX/X",
+      "types": [
+        "Automotive",
+        "AI"
+      ],
+      "gender": "Male",
+      "photo_url": null
     },
     {
       "id": 3,
-      "label": "a16z",
-      "value": 9
+      "label": "Mark Zuckerberg",
+      "value": 10,
+      "notable_company": "Meta",
+      "types": [
+        "Social Media",
+        "VR/AR"
+      ],
+      "gender": "Male",
+      "photo_url": null
     },
     {
       "id": 4,
-      "label": "OpenAI",
-      "value": 9
+      "label": "Alexander Wang",
+      "value": 10,
+      "notable_company": "Scale AI",
+      "types": [
+        "AI",
+        "Defense"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 5,
+      "label": "Nat Friedman",
+      "value": 10,
+      "notable_company": "Former GitHub CEO",
+      "types": [
+        "Dev Tools",
+        "AI"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 6,
+      "label": "Nikesh Arora",
+      "value": 10,
+      "notable_company": "Palo Alto Networks",
+      "types": [
+        "Cybersecurity",
+        "Telecom"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 7,
+      "label": "Demis Hassabis",
+      "value": 10,
+      "notable_company": "DeepMind",
+      "types": [
+        "AI",
+        "Healthcare"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 8,
+      "label": "Roelof Botha",
+      "value": 10,
+      "notable_company": "Sequoia Capital",
+      "types": [
+        "Venture Capital",
+        "AI"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 9,
+      "label": "Naval Ravikant",
+      "value": 10,
+      "notable_company": "AngelList",
+      "types": [
+        "Venture Capital",
+        "Philosophy"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 10,
+      "label": "Dario Amodei",
+      "value": 10,
+      "notable_company": "Anthropic",
+      "types": [
+        "AI",
+        "Safety"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 11,
+      "label": "Larry Page",
+      "value": 10,
+      "notable_company": "Google",
+      "types": [
+        "Search",
+        "AI"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 12,
+      "label": "Vinod Khosla",
+      "value": 10,
+      "notable_company": "Khosla Ventures",
+      "types": [
+        "Venture Capital",
+        "Energy"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 13,
+      "label": "Satya Nadella",
+      "value": 10,
+      "notable_company": "Microsoft",
+      "types": [
+        "Cloud",
+        "AI"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 14,
+      "label": "Tim Cook",
+      "value": 10,
+      "notable_company": "Apple",
+      "types": [
+        "Consumer Electronics",
+        "Privacy"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 15,
+      "label": "Peter Thiel",
+      "value": 10,
+      "notable_company": "Founders Fund",
+      "types": [
+        "Venture Capital",
+        "Politics"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 16,
+      "label": "Max Levchin",
+      "value": 10,
+      "notable_company": "PayPal/Affirm",
+      "types": [
+        "Fintech",
+        "Entrepreneurship"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 17,
+      "label": "Ben Horowitz",
+      "value": 10,
+      "notable_company": "a16z",
+      "types": [
+        "Venture Capital",
+        "Crypto"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 18,
+      "label": "Marc Benioff",
+      "value": 10,
+      "notable_company": "Salesforce",
+      "types": [
+        "Cloud",
+        "Philanthropy"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 19,
+      "label": "Travis Kalanick",
+      "value": 10,
+      "notable_company": "Uber",
+      "types": [
+        "Transportation",
+        "Mobility"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 20,
+      "label": "Stewart Butterfield",
+      "value": 10,
+      "notable_company": "Slack",
+      "types": [
+        "Communication",
+        "Collaboration"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 21,
+      "label": "Patrick Collison",
+      "value": 10,
+      "notable_company": "Stripe",
+      "types": [
+        "Payments",
+        "SaaS"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 22,
+      "label": "Bill Gates",
+      "value": 10,
+      "notable_company": "Microsoft",
+      "types": [
+        "Enterprise",
+        "Philanthropy"
+      ],
+      "gender": "Male",
+      "photo_url": null
+    },
+    {
+      "id": 23,
+      "label": "Jeff Bezos",
+      "value": 10,
+      "notable_company": "Amazon",
+      "types": [
+        "E-commerce",
+        "Cloud"
+      ],
+      "gender": "Male",
+      "photo_url": null
     }
   ],
   "edges": [
     {
-      "from": 3,
-      "to": 2,
-      "label": "invested"
+      "from": 1,
+      "to": 4,
+      "label": "Invested in",
+      "length": 150,
+      "strength": 8,
+      "color": {
+        "color": "hsl(240, 70%, 50%)"
+      }
     },
     {
       "from": 1,
-      "to": 2,
-      "label": "acquired"
+      "to": 10,
+      "label": "Co-founded company together",
+      "length": 50,
+      "strength": 10,
+      "color": {
+        "color": "hsl(300, 70%, 50%)"
+      }
+    },
+    {
+      "from": 1,
+      "to": 12,
+      "label": "Worked together with",
+      "length": 200,
+      "strength": 7,
+      "color": {
+        "color": "hsl(210, 70%, 50%)"
+      }
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "label": "Direct competitors",
+      "length": 250,
+      "strength": 6,
+      "color": {
+        "color": "hsl(180, 70%, 50%)"
+      }
+    },
+    {
+      "from": 2,
+      "to": 22,
+      "label": "Direct competitors",
+      "length": 300,
+      "strength": 5,
+      "color": {
+        "color": "hsl(150, 70%, 50%)"
+      }
+    },
+    {
+      "from": 3,
+      "to": 20,
+      "label": "Invested in",
+      "length": 200,
+      "strength": 7,
+      "color": {
+        "color": "hsl(210, 70%, 50%)"
+      }
     },
     {
       "from": 3,
       "to": 4,
-      "label": "invested"
+      "label": "Invested in",
+      "length": 150,
+      "strength": 8,
+      "color": {
+        "color": "hsl(240, 70%, 50%)"
+      }
+    },
+    {
+      "from": 4,
+      "to": 10,
+      "label": "Worked together with",
+      "length": 250,
+      "strength": 6,
+      "color": {
+        "color": "hsl(180, 70%, 50%)"
+      }
+    },
+    {
+      "from": 5,
+      "to": 1,
+      "label": "Worked together with",
+      "length": 100,
+      "strength": 9,
+      "color": {
+        "color": "hsl(270, 70%, 50%)"
+      }
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "Invested in",
+      "length": 200,
+      "strength": 7,
+      "color": {
+        "color": "hsl(210, 70%, 50%)"
+      }
+    },
+    {
+      "from": 6,
+      "to": 22,
+      "label": "Board member of",
+      "length": 150,
+      "strength": 8,
+      "color": {
+        "color": "hsl(240, 70%, 50%)"
+      }
+    },
+    {
+      "from": 7,
+      "to": 11,
+      "label": "Worked together with",
+      "length": 100,
+      "strength": 9,
+      "color": {
+        "color": "hsl(270, 70%, 50%)"
+      }
+    },
+    {
+      "from": 8,
+      "to": 11,
+      "label": "Invested in",
+      "length": 200,
+      "strength": 7,
+      "color": {
+        "color": "hsl(210, 70%, 50%)"
+      }
+    },
+    {
+      "from": 9,
+      "to": 1,
+      "label": "Invested in",
+      "length": 150,
+      "strength": 8,
+      "color": {
+        "color": "hsl(240, 70%, 50%)"
+      }
+    },
+    {
+      "from": 9,
+      "to": 4,
+      "label": "Invested in",
+      "length": 200,
+      "strength": 7,
+      "color": {
+        "color": "hsl(210, 70%, 50%)"
+      }
+    },
+    {
+      "from": 10,
+      "to": 7,
+      "label": "Worked together with",
+      "length": 150,
+      "strength": 8,
+      "color": {
+        "color": "hsl(240, 70%, 50%)"
+      }
+    },
+    {
+      "from": 11,
+      "to": 3,
+      "label": "Co-founded company together",
+      "length": 50,
+      "strength": 10,
+      "color": {
+        "color": "hsl(300, 70%, 50%)"
+      }
+    },
+    {
+      "from": 12,
+      "to": 11,
+      "label": "Invested in",
+      "length": 250,
+      "strength": 6,
+      "color": {
+        "color": "hsl(180, 70%, 50%)"
+      }
+    },
+    {
+      "from": 13,
+      "to": 22,
+      "label": "Direct competitors",
+      "length": 200,
+      "strength": 7,
+      "color": {
+        "color": "hsl(210, 70%, 50%)"
+      }
+    },
+    {
+      "from": 14,
+      "to": 22,
+      "label": "Direct competitors",
+      "length": 250,
+      "strength": 6,
+      "color": {
+        "color": "hsl(180, 70%, 50%)"
+      }
+    },
+    {
+      "from": 15,
+      "to": 3,
+      "label": "Invested in",
+      "length": 150,
+      "strength": 8,
+      "color": {
+        "color": "hsl(240, 70%, 50%)"
+      }
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "label": "Co-founded company together",
+      "length": 50,
+      "strength": 10,
+      "color": {
+        "color": "hsl(300, 70%, 50%)"
+      }
+    },
+    {
+      "from": 16,
+      "to": 3,
+      "label": "Invested in",
+      "length": 200,
+      "strength": 7,
+      "color": {
+        "color": "hsl(210, 70%, 50%)"
+      }
+    },
+    {
+      "from": 17,
+      "to": 8,
+      "label": "Invested in",
+      "length": 200,
+      "strength": 7,
+      "color": {
+        "color": "hsl(210, 70%, 50%)"
+      }
+    },
+    {
+      "from": 18,
+      "to": 13,
+      "label": "Direct competitors",
+      "length": 250,
+      "strength": 6,
+      "color": {
+        "color": "hsl(180, 70%, 50%)"
+      }
+    },
+    {
+      "from": 19,
+      "to": 3,
+      "label": "Publicly criticized",
+      "length": 400,
+      "strength": 3,
+      "color": {
+        "color": "hsl(90, 70%, 50%)"
+      }
+    },
+    {
+      "from": 20,
+      "to": 3,
+      "label": "Direct competitors",
+      "length": 300,
+      "strength": 5,
+      "color": {
+        "color": "hsl(150, 70%, 50%)"
+      }
+    },
+    {
+      "from": 21,
+      "to": 3,
+      "label": "Invested in",
+      "length": 200,
+      "strength": 7,
+      "color": {
+        "color": "hsl(210, 70%, 50%)"
+      }
+    },
+    {
+      "from": 22,
+      "to": 2,
+      "label": "Direct competitors",
+      "length": 250,
+      "strength": 6,
+      "color": {
+        "color": "hsl(180, 70%, 50%)"
+      }
+    },
+    {
+      "from": 23,
+      "to": 2,
+      "label": "Publicly criticized",
+      "length": 350,
+      "strength": 4,
+      "color": {
+        "color": "hsl(120, 70%, 50%)"
+      }
     }
   ]
 }
